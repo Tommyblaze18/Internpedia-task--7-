@@ -1,0 +1,268 @@
+* {
+  scroll-behavior: smooth;
+}
+div.container {
+  background-color: black;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+}
+div.firstGround {
+  display: inline-flex;
+  gap: 70rem;
+  margin-top: 3em;
+  font-size: 30px;
+}
+.Netflix {
+  color: rgb(229, 9, 20);
+  margin-left: 70px;
+  font-weight: 700;
+  font-family: sans-serif;
+  fill: currentColor;
+  display: block;
+  width: 9.25rem;
+  height: 2.5rem;
+  box-sizing: border-box;
+  transform-origin: 0px 0px;
+}
+.signIn {
+  transition: none;
+  color: white;
+  background-color: rgb(255, 25, 37);
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 10px;
+}
+.signIn:hover {
+  cursor: pointer;
+  background-color: rgb(206, 21, 21);
+  transform: scale(1.1);
+  animation: bounce 0.5s;
+}
+div.first {
+  background-image: url(img/netflix.jpg);
+  background-size: contain;
+  border-bottom: 7px solid rgb(85, 85, 85);
+}
+input.emailInput {
+  backdrop-filter: brightness(0.2);
+}
+div.Second {
+  margin-top: 15%;
+  margin-bottom: 5%;
+
+  text-align: center;
+  color: whitesmoke;
+}
+div.Second h2 {
+  font-size: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font: bolder;
+}
+div.Second p {
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+}
+div.secondGround {
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-bottom: 7px solid rgb(86, 85, 85);
+}
+div.secondGround h2 {
+  font-size: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+}
+div.secondGround p {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+div.thirdGround {
+  display: flex;
+  color: white;
+  border-bottom: 7px solid rgb(86, 85, 85);
+}
+div.thirdGround h2 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+div.padding {
+  padding: 9rem;
+}
+div.thirdGround p {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+div.fourthGround h2 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-left: 13%;
+}
+div.fourthGround p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-left: 13%;
+}
+div.fourthGround {
+  color: white;
+  border-bottom: 7px solid rgb(86, 85, 85);
+}
+div.fifthGround {
+  display: flex;
+  color: white;
+  border-bottom: 7px solid rgb(86, 85, 85);
+}
+div.fifthGround h2 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-left: 13%;
+}
+div.fifthGround p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-left: 13%;
+}
+div.fifthGround img {
+  margin-left: 13%;
+}
+div.sixthGround {
+  color: white;
+  text-align: center;
+  /* border-bottom: 7px solid rgb(86, 85, 85);*/
+  padding-bottom: 20px;
+}
+div.sixthGround h2 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+div.sixthGround p {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+div.sixthGround input label {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 15px;
+  font-size: 16px;
+  pointer-events: none;
+  color: white;
+  padding: 0 5px;
+  transition: 0.5s;
+}
+
+div input {
+  width: 360px;
+  height: 60px;
+  color: white;
+  font-size: 16px;
+  padding: 0 15px;
+  border: 1.2px solid rgb(237, 237, 237);
+  background: transparent;
+  outline: none;
+  border-radius: 5px;
+}
+div.sixthGround input:focus label,
+div.sixthGround input:valid label {
+  top: 0;
+  background: #010031;
+  font-size: 14px;
+}
+button.emailButton {
+  transition-timing-function: cubic-bezier(0.5, 0, 0.1, 1);
+  cursor: pointer;
+  color: white;
+  border-color: none;
+  font-size: 1.5rem;
+  height: 60px;
+  line-height: 1;
+  letter-spacing: normal;
+  justify-content: center;
+  text-align: center;
+  margin-left: 0.5rem;
+  margin-top: 0;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  background: rgb(229, 9, 20);
+}
+button.emailButton:hover {
+  background-color: rgb(202, 27, 27);
+}
+footer {
+  margin-left: 7%;
+}
+footer div.listing {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  color: rgb(122, 120, 120);
+  font-size: 16px;
+  text-decoration: underline;
+  list-style: none;
+}
+footer div.listing li:hover {
+  cursor: pointer;
+}
+div.top {
+  display: grid;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+select#language {
+  background-color: grey;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+div.language.selector {
+  margin-top: 10px;
+}
+footer p {
+  color: rgb(122, 120, 120);
+  padding-bottom: 20px;
+}
+span.Netflix img {
+  width: 10rem;
+  height: 5rem;
+  fill: red;
+  filter: brightness(1);
+}
+div.sixthGround button {
+  background-color: rgb(94, 94, 94);
+  padding: 30px;
+  font-size: 1.5rem;
+  color: white;
+
+  cursor: pointer;
+  width: 55%;
+}
+
+div.sixthGround button span {
+  margin-left: 13em;
+  font-size: 2rem;
+}
+div.sixthGround button:hover {
+  background-color: rgb(110, 104, 104);
+}
+
+div.button-text {
+  border-top: 2px solid black;
+  padding-top: 20px;
+  display: none;
+  background-color: rgb(83, 83, 83);
+  font-size: 1.3rem;
+  cursor: pointer;
+  text-align: center;
+  width: 55%;
+  align-self: center;
+  margin-left: 22.5%;
+
+  padding-bottom: 20px;
+}
